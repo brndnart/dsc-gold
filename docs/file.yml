@@ -1,0 +1,18 @@
+tags:
+    - name: File Cleansing
+get:
+    description: REST API for File Cleansing
+consumes:
+    - multipart/form-data
+parameters:
+    - name: file
+      in: formData
+      required: true
+      type: file
+responses:
+    '200':
+        description: 'Success'
+    '400':
+        description: 'Failed'
+    '500':
+        description: 'Internal Server Error'
